@@ -1,0 +1,22 @@
+{
+  "name": "MTimeCountDown",
+  "version": "0.1.0",
+  "summary": "A short description of MTimeCountDown.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hu5675/MTimeCountDown",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hu5675": "hytmars1989@126.com"
+  },
+  "source": {
+    "git": "https://github.com/hu5675/MTimeCountDown.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MTimeCountDown/Classes/**/*"
+}

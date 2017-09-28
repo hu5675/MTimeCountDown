@@ -1,0 +1,6 @@
+framework module MTimeCountDown {
+  umbrella header "MTimeCountDown-umbrella.h"
+
+  export *
+  module * { export * }
+}

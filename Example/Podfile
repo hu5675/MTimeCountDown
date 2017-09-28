@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MTimeCountDown_Example' do
+  pod 'MTimeCountDown', :path => '../'
+
+  target 'MTimeCountDown_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

@@ -1,0 +1,6 @@
+framework module Pods_MTimeCountDown_Example {
+  umbrella header "Pods-MTimeCountDown_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
