@@ -15,16 +15,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        let timer:MTimeCountDownTimeSource? = MTimeCountDownTimeSource()
-//        timer?.startCountDown(delay: 0, timeCount: 10, repeatBlock: { (left) -> (Void) in
-//            print("left:\(left)")
-//        }) { (left) -> (Void) in
-//            print("倒计时结束")
-//        }
-//        
-//        DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 3) {
-//            timer?.cancelCountDown()
-//        }
+        let timer:MTimeCountDownTimeSource? = MTimeCountDownTimeSource()
+        timer?.startCountDown(delay: 0, timeCount: 10, repeatBlock: { (left) -> (Void) in
+            print("left:\(left)")
+        }) { (left) -> (Void) in
+            print("倒计时结束")
+        }
+        
+        DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 3) {
+            timer?.cancelCountDown()
+        }
 
         MTimeCountDownOperationManager.manager.startCountDown("1234", delay: 2, timeCount: 10, repeatBlock: { (left) in
             print("left:\(left)")
@@ -32,9 +32,9 @@ class ViewController: UIViewController {
             print("倒计时结束")
         }
         
-//        DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
-//            MTimeCountDownOperationManager.manager.cancelTask("1234")
-//        }
+        DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
+            MTimeCountDownOperationManager.manager.cancelTask("1234")
+        }
     }
 
 }
