@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTimeCountDown'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'swift-时间倒计时，用于发送短信、验证码等类似功能'
 
 # This description is used to generate tags and improve search results.

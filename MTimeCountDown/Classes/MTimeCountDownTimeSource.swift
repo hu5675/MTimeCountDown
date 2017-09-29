@@ -45,6 +45,16 @@ public class MTimeCountDownTimeSource : NSObject {
         self.timer?.resume()
     }
     
+    /// 挂起
+    public func suspendCountDown(){
+        self.timer?.suspend()
+    }
+    
+    /// 恢复
+    public func resumeCountDown(){
+        self.timer?.resume()
+    }
+    
     /// 取消倒计时
     public func cancelCountDown(){
         self.timer?.cancel()
