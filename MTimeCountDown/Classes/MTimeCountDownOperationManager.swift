@@ -66,6 +66,11 @@ public class MTimeCountDownOperationManager: NSObject {
         self.operationQueue.isSuspended = true
     }
     
+    /// 恢复所有倒计时任务
+    public func resumeAllTask(){
+        self.operationQueue.isSuspended = false
+    }
+    
     /// 取消指定任务的倒计时任务
     ///
     /// - Parameter key: 任务key，用于标示唯一性
